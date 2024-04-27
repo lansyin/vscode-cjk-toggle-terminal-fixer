@@ -159,19 +159,13 @@ fn mock_key_press() {
 
         if !matches!(
             window_title.rsplit(" - ").next().map(str::trim),
-            Some("Visual Studio Code" | "VS Code")
+            Some("Visual Studio Code" | "VSCode")
         ) {
             return;
         }
 
         for action in [WM_KEYDOWN, WM_KEYUP] {
-            PostMessageA(
-                h_active_wnd,
-                action,
-                WPARAM(VK_OEM_3.0 as usize),
-                LPARAM(1 | 0b10 << 16),
-            )
-            .warn();
+            PostMessageA(h_active_wnd, action, WPARAM(VK_OEM_3.0 as usize), LPARAM(1)).warn();
         }
     }
 }
