@@ -1,8 +1,12 @@
 ## The Fixer
 
-This utility fixes the issue where 「Ctrl+`」 doesn't work with some CJK keyboards/IMEs in VSCode. 
+> Archived in favor of [CtrlOEM3][ctrl-oem3].
 
-You may download it directly from the releases page. It's automatically built by Github Actions, so you should not worry about any tampering. 
+[ctrl-oem3]: https://github.com/lanlytt/ctrl-oem3
+
+This utility fixes the issue where 「Ctrl+`」 doesn't work with some CJK keyboards/IMEs in VSCode.
+
+You may download it directly from the releases page. It's automatically built by Github Actions, so you should not worry about any tampering.
 
 ## Caveats
 
